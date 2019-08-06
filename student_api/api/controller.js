@@ -8,11 +8,11 @@ module.exports={
         .catch(err=>console.log(err)|| res.json(err)),
 
     studentNew: (req, res) => {
-        console.log("entered new controller", req.body);
         Students
         .create(req.body)
         .then(anew => console.log("created in controller",anew)|| res.json(anew))
-        .catch(err=>console.log(err) || res.json(err))
+        .catch(err=>console.log(err) || res.json(err));
+        res.redirect('/')
     },
 
     studentRemove: (req, res) => Students

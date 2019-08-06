@@ -9,13 +9,17 @@ var StudentSchema = new mongoose.Schema({
     firstName: {
             type: String,
             required: [true, "Please enter a First Name."],
-            minlength: [true, "The First Name must be at least 2 characters long."]
+            minlength: [2, "The First Name must be at least 2 characters long."]
     },
     lastName: {
             type: String,
             required: [true, "Please enter a Last Name."],
-            minlength: [true, "The Last Name must be at least 2 characters long."]
+            minlength: [2, "The Last Name must be at least 2 characters long."]
     }, //Live or Video
+    meme_url: {
+            type: String,
+            required: [true, "Please enter a meme url."]
+    }
 }, {timestamps:true})
 
 
