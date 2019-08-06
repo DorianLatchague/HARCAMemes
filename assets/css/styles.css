@@ -4,7 +4,7 @@ i {
 .game-container {
     width: 100vw;
 }
-.card {
+.cards {
     position:relative;
     transform-style: preserve-3d;
     cursor: pointer;
@@ -12,16 +12,17 @@ i {
     width: 400px;
     height: 400px;
 }
-.card:hover {
+.cards:hover {
     box-shadow: 0 0 10px rgba(0,0,0,.5)
 }
-.card.flipped {
+.cards.flipped {
     transform: rotateY(180deg);
 }
 .card-front {
     background-color: white;
     display: flex;
     align-items: center;
+    justify-content: center;
     border-radius: .25em;
     border: 1px solid black;
     width: 100%;
